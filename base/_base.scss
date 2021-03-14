@@ -1,0 +1,16 @@
+@use '../abstracts/mixins' as mixins;
+@use 'root';
+@use 'equalize';
+
+/* LAYOUT STYLING */
+////////////////////
+
+body {
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+  font-size: 1rem;
+
+  @include mixins.mq(medium) {
+    font-size: 2rem;
+  }
+}
